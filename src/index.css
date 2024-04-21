@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Perfect_DOSVGA';
+    src: url('./assets/fonts/PerfectDOSVGA4371.ttf') format('truetype'); /* Path to your font file */
+    font-weight: 400;
+    /* font-style: normal; */
+  }
+  
+  body {
+    font-family: 'Perfect_DOSVGA',monospace !important; /* Use the font-family */
+  }
