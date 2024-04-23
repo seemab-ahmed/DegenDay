@@ -7,13 +7,13 @@ import fireLogo from "../assets/images/FireSimple.png";
 export const CoinInfo = () => {
   return (
     <Box
-      minHeight={"400px"}
+      // minHeight={"400px"}
       border={"1px solid black"}
       display={"flex"}
       justifyContent={"center"}
     >
       <Grid container>
-        <Grid item xl={2.1} lg={2.1} md={2.1} sm={2.1} xs={2.1}>
+        <Grid item xl={2.1} lg={2.1} md={2.1} sm={12} xs={12}>
           <Box border={"1px solid #00000026"}>
             <Box
               padding={"5px 1rem"}
@@ -31,7 +31,7 @@ export const CoinInfo = () => {
             </Box>
           </Box>
           <Box
-            height={"92.5%"}
+            height={"100vh"}
             bgcolor={"#DDDDDD"}
             border={"1px solid #00000026"}
             display={"flex"}
@@ -47,7 +47,7 @@ export const CoinInfo = () => {
           </Box>
         </Grid>
 
-        <Grid item xl={3.3} lg={3.3} md={3.3} sm={3.3} xs={3.3}>
+        <Grid item xl={3.3} lg={3.3} md={3.3} sm={12} xs={12}>
           <Box border={"1px solid #00000026"}>
             <Box
               padding={"5px 1rem"}
@@ -66,7 +66,7 @@ export const CoinInfo = () => {
           </Box>
 
           <Box
-            height={"80.5%"}
+            height={"100vh"}
             bgcolor={"#EEEEEE"}
             border={"1px solid #00000026"}
             padding={"1.5rem 1.5rem"}
@@ -146,7 +146,7 @@ export const CoinInfo = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xl={3.3} lg={3.3} md={3.3} sm={3.3} xs={3.3}>
+        <Grid item xl={3.3} lg={3.3} md={3.3} sm={12} xs={12}>
           <Box border={"1px solid #00000026"}>
             <Box
               padding={"5px 1rem"}
@@ -165,7 +165,7 @@ export const CoinInfo = () => {
           </Box>
 
           <Box
-            height={"80.5%"}
+            height={"100vh"}
             bgcolor={"#EEEEEE"}
             border={"1px solid #00000026"}
             padding={"1.5rem 1.5rem"}
@@ -194,7 +194,7 @@ export const CoinInfo = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xl={3.3} lg={3.3} md={3.3} sm={3.3} xs={3.3}>
+        <Grid item xl={3.3} lg={3.3} md={3.3} sm={12} xs={12}>
           <Box border={"1px solid #00000026"}>
             <Box
               padding={"5px 1rem"}
@@ -212,7 +212,7 @@ export const CoinInfo = () => {
             </Box>
           </Box>
           <Box
-            height={"80.5%"}
+            height={"100vh"}
             bgcolor={"#EEEEEE"}
             border={"1px solid #00000026"}
             padding={"1.5rem 1.5rem"}

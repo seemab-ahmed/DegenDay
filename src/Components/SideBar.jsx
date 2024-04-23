@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Box } from "@mui/material";
 import pencilInHand from "../assets/images/Script_editor.png";
-import notepad from '../assets/images/Notepad.png';
+import notepad from "../assets/images/Notepad.png";
 import iTunes from "../assets/images/iTunes.png";
 import twoFacesIcon from "../assets/images/file-sharing.png";
 import purpleFileIcon from "../assets/images/DefaultFile.png";
@@ -11,23 +12,33 @@ function SideBar(props) {
   return (
     <>
       <Box
-      
-      borderLeft={"1px solid #FFFFFF26"}
+        borderLeft={"1px solid #FFFFFF26"}
         width={"100%"}
-        height={"100vh"}
+        // height={"92vh"}
         display={"flex"}
-        sx={{flexDirection:{ xs:'row',sm:'row',md:'column',lg:'column',xl:'column'},flexWrap:{xs:'wrap',sm:'wrap',md:'nowrap',lg:'',xl:''}}}
+        sx={{
+          flexDirection: {
+            xs: "row",
+            sm: "row",
+            md: "column",
+            lg: "column",
+            xl: "column",
+          },
+          flexWrap: { xs: "wrap", sm: "wrap", md: "nowrap", lg: "", xl: "" },
+        }}
         // flexDirection={"column"}
         alignItems={"center"}
         justifyContent={"space-between"}
       >
-
         <Box
-        // sx={{cursor:'pointer','&:hover':{border:'1px solid red'}}}
-        sx={{cursor:'pointer'}}
-        onClick={()=>{props.setRenderFromSidebar("startNewCoin"); props.setModalOpenFromSidebar(true)}}
-          width={"102px"}
-          height={"88px"}
+          // sx={{cursor:'pointer','&:hover':{border:'1px solid red'}}}
+          sx={{ cursor: "pointer" }}
+          onClick={() => {
+            props.setRenderFromSidebar("startNewCoin");
+            props.setModalOpenFromSidebar(true);
+          }}
+          width={"100px"}
+          height={"70px"}
           display={"flex"}
           alignItems={"center"}
           flexDirection={"column"}
@@ -51,11 +62,12 @@ function SideBar(props) {
           </Box>
         </Box>
 
-
-
         <Box
-          sx={{cursor:'pointer'}}
-          onClick={()=>{props.setRenderFromSidebar("wallet"); props.setModalOpenFromSidebar(true)}}
+          sx={{ cursor: "pointer" }}
+          onClick={() => {
+            props.setRenderFromSidebar("wallet");
+            props.setModalOpenFromSidebar(true);
+          }}
           width={"102px"}
           height={"88px"}
           display={"flex"}
@@ -77,12 +89,9 @@ function SideBar(props) {
             textAlign={"center"}
             fontWeight={400}
           >
-           wallet.js
+            wallet.js
           </Box>
         </Box>
-
-
-
 
         <Box
           width={"102px"}
@@ -109,8 +118,7 @@ function SideBar(props) {
             how it works.txt
           </Box>
         </Box>
-
-
+        {/* 
         <Box
           width={"102px"}
           height={"88px"}
@@ -119,12 +127,7 @@ function SideBar(props) {
           flexDirection={"column"}
           justifyContent={"space-evenly"}
         >
-          <img
-            src={iTunes}
-            alt="itunes  Icon"
-            width={"32px"}
-            height={"32px"}
-          />
+          <img src={iTunes} alt="itunes  Icon" width={"32px"} height={"32px"} />
           <Box
             width={"86px"}
             bgcolor={"#7373A6"}
@@ -135,9 +138,14 @@ function SideBar(props) {
           >
             radio.app
           </Box>
-        </Box>
+        </Box> */}
 
         <Box
+          onClick={() => {
+            props.setRenderFromSidebar("file");
+            props.setModalOpenFromSidebar(true);
+          }}
+          sx={{ cursor: "pointer" }}
           width={"102px"}
           height={"88px"}
           display={"flex"}
@@ -159,13 +167,17 @@ function SideBar(props) {
             textAlign={"center"}
             fontWeight={400}
           >
-            Links
+            {/* Links */}
+            File
           </Box>
         </Box>
 
         <Box
-          sx={{cursor:'pointer'}}
-          onClick={()=>{props.setRenderFromSidebar("message"); props.setModalOpenFromSidebar(true)}}
+          sx={{ cursor: "pointer" }}
+          onClick={() => {
+            props.setRenderFromSidebar("message");
+            props.setModalOpenFromSidebar(true);
+          }}
           width={"102px"}
           height={"88px"}
           display={"flex"}
@@ -187,13 +199,16 @@ function SideBar(props) {
             textAlign={"center"}
             fontWeight={400}
           >
-           Message Board.php
+            Message Board.php
           </Box>
         </Box>
 
         <Box
-           sx={{cursor:'pointer'}}
-           onClick={()=>{props.setRenderFromSidebar("takeOver"); props.setModalOpenFromSidebar(true)}}
+          sx={{ cursor: "pointer" }}
+          onClick={() => {
+            props.setRenderFromSidebar("takeOver");
+            props.setModalOpenFromSidebar(true);
+          }}
           width={"102px"}
           height={"88px"}
           display={"flex"}
@@ -215,12 +230,9 @@ function SideBar(props) {
             textAlign={"center"}
             fontWeight={400}
           >
-           inbox
+            inbox
           </Box>
         </Box>
-
-
-
       </Box>
     </>
   );

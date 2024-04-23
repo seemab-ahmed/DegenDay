@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Divider, Typography } from "@mui/material";
 import pencilInHand from "../assets/images/Script_editor.png";
 import { ArrowDropDown, ArrowRight } from "@mui/icons-material";
 import pepecoinRectangle from "../assets/images/pepecoinRectangle.png";
@@ -11,7 +11,7 @@ export default function StartNewCoin(props) {
     top: "40%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "43%",
+    width: "55%",
     bgcolor: "#FFFFFF",
     border: "none",
     //       overflowX:'hidden',
@@ -55,7 +55,9 @@ export default function StartNewCoin(props) {
         </Box>
 
         <Box
-          width={"33%"}
+          sx={{
+            width: { xs: "10%", sm: "25%", md: "33%", lg: "33%", xl: "33%" },
+          }}
           height={"13px"}
           bgcolor={"#CCCCCC"}
           display={"flex"}
@@ -84,8 +86,16 @@ export default function StartNewCoin(props) {
               height={"16px"}
             />
             <Typography
-              fontFamily={"Perfect_DOSVGA"}
-              fontSize={"13px"}
+              sx={{
+                fontSize: {
+                  xs: "10px",
+                  sm: "12px",
+                  md: "13px",
+                  lg: "13px",
+                  xl: "13px",
+                },
+                fontFamily: "Perfect_DOSVGA",
+              }}
               fontWeight={400}
               lineHeight={"16px"}
               align="center"
@@ -96,7 +106,9 @@ export default function StartNewCoin(props) {
         </Box>
 
         <Box
-          width={"33%"}
+          sx={{
+            width: { xs: "10%", sm: "25%", md: "33%", lg: "33%", xl: "33%" },
+          }}
           height={"13px"}
           bgcolor={"#CCCCCC"}
           display={"flex"}
@@ -115,7 +127,7 @@ export default function StartNewCoin(props) {
         width={"100%"}
         height={"68vh"}
         sx={{
-          overflow: "auto",
+          // overflow: "auto",
           //                      //       // for scrollbar styling
           "&::-webkit-scrollbar": {
             width: "15px" /* Width of the scrollbar */,
@@ -136,7 +148,15 @@ export default function StartNewCoin(props) {
         <Box
           mt={1}
           ml={2}
-          fontSize={"14px"}
+          sx={{
+            fontSize: {
+              xs: "11px",
+              sm: "14px",
+              md: "14px",
+              lg: "14px",
+              xl: "14px",
+            },
+          }}
           width={"166.6px"}
           height={"16px"}
           display={"flex"}
@@ -144,12 +164,38 @@ export default function StartNewCoin(props) {
           fontWeight={400}
         >
           C:
-          <ArrowRight /> Start a New Coin
+          <ArrowRight
+            sx={{
+              fontSize: {
+                xs: "11px",
+                sm: "14px",
+                md: "16px",
+                lg: "16px",
+                xl: "16px",
+              },
+            }}
+          />{" "}
+          Start a New Coin
         </Box>
         <Box
           mt={1}
           ml={5}
-          fontSize={"14px"}
+          sx={{
+            fontSize: {
+              xs: "11px",
+              sm: "13px",
+              md: "14px",
+              lg: "14px",
+              xl: "14px",
+            },
+            ml: {
+              xs: 1,
+              sm: 3,
+              md: 5,
+              lg: 5,
+              xl: 5,
+            },
+          }}
           width={"300.6px"}
           height={"16px"}
           display={"flex"}
@@ -160,35 +206,61 @@ export default function StartNewCoin(props) {
           <span style={{ color: "red" }}>std:</span> :string generate_coin()
         </Box>
         <Box
-          width={"500px"}
-          height={"263px"}
+          sx={{
+            width: {
+              xs: "160px",
+              sm: "300px",
+              md: "500px",
+              lg: "630px",
+              xl: "630px",
+            },
+          }}
+          minHeight={"263px"}
           margin={"auto"}
           mt={1}
           border={"1px solid #CECECE"}
         >
           <Box
             width={"100%"}
-            height={"40px"}
+            // height={"50px"}
             display={"flex"}
-            alignItems={"center"}
-            justifyContent={"center"}
-            borderBottom={"1px solid #CECECE"}
+            sx={{
+              flexDirection: {
+                xs: "column",
+                sm: "column",
+                md: "row",
+                lg: "row",
+                xl: "row",
+              },
+            }}
+            padding={"5px"}
+            mt={"15px"}
+            // borderBottom={"1px solid #CECECE"}
           >
-            <Box width={"25%"}>
-              <span
-                style={{ color: "#0029FF", fontSize: "16px", fontWeight: 400 }}
-              >
+            <Box
+              width={"120px"}
+              sx={{
+                fontSize: {
+                  xs: "11px",
+                  sm: "13px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "14px",
+                },
+              }}
+            >
+              <span style={{ color: "#0029FF", fontWeight: 400 }}>
                 Enter a name:
               </span>
             </Box>
-            <Box width={"68%"} height={"38px"}>
+            <Box>
               <input
                 type="text"
                 name="name"
                 style={{
-                  height: "38px",
+                  // height: "38px",
                   textAlign: "left",
-                  width: "98%",
+                  width: "90%",
                   outline: "none",
                   border: "none",
                 }}
@@ -196,22 +268,40 @@ export default function StartNewCoin(props) {
               ></input>
             </Box>
           </Box>
+          <Divider />
           <Box
             width={"100%"}
-            height={"40px"}
             display={"flex"}
-            alignItems={"center"}
-            justifyContent={"center"}
-            borderBottom={"1px solid #CECECE"}
+            sx={{
+              flexDirection: {
+                xs: "column",
+                sm: "column",
+                md: "row",
+                lg: "row",
+                xl: "row",
+              },
+            }}
+            padding={"5px"}
+            mt={"15px"}
+            // borderBottom={"1px solid #CECECE"}
           >
-            <Box width={"28%"}>
-              <span
-                style={{ color: "#0029FF", fontSize: "16px", fontWeight: 400 }}
-              >
+            <Box
+              width={"130px"}
+              sx={{
+                fontSize: {
+                  xs: "11px",
+                  sm: "13px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "14px",
+                },
+              }}
+            >
+              <span style={{ color: "#0029FF", fontWeight: 400 }}>
                 Enter a ticker:
               </span>
             </Box>
-            <Box width={"65%"} height={"38px"}>
+            <Box width={"50%"} height={"38px"}>
               <input
                 name="ticker"
                 type="text"
@@ -226,35 +316,55 @@ export default function StartNewCoin(props) {
               ></input>
             </Box>
           </Box>
+          <Divider sx={{ mb: "5px", mt: "5px" }} />
           <Box
             width={"100%"}
-            height={"119px"}
+            height={"80px"}
             display={"flex"}
-            alignItems={"flex-start"}
-            justifyContent={"center"}
-            borderBottom={"1px solid #CECECE"}
+            sx={{
+              flexDirection: {
+                xs: "column",
+                sm: "column",
+                md: "row",
+                lg: "row",
+                xl: "row",
+              },
+            }}
+            padding={"5px"}
+            mt={"10px"}
+            // borderBottom={"1px solid #CECECE"}
           >
-            <Box width={"39%"} marginLeft={"4%"}>
+            <Box
+              width={"160px"}
+              sx={{
+                fontSize: {
+                  xs: "11px",
+                  sm: "13px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "14px",
+                },
+              }}
+            >
               <span
                 style={{
                   lineHeight: "30px",
                   color: "#0029FF",
-                  fontSize: "16px",
                   fontWeight: 400,
                 }}
               >
                 Enter a description:
               </span>
             </Box>
-            <Box width={"60%"} height={"38px"}>
+            <Box width={"50%"} height={"38px"}>
               <textarea
                 name="description"
                 type="text"
                 style={{
                   marginTop: "2%",
-                  height: "110px",
+                  height: "70px",
                   textAlign: "left",
-                  width: "96%",
+                  width: "100%",
                   outline: "none",
                   border: "none",
                 }}
@@ -262,18 +372,37 @@ export default function StartNewCoin(props) {
               ></textarea>
             </Box>
           </Box>
+          <Divider />
           <Box
             width={"100%"}
-            height={"64px"}
+            // height={"60px"}
             display={"flex"}
             alignItems={"center"}
-            justifyContent={"center"}
+            justifyContent={"space-between"}
+            x={{
+              flexDirection: {
+                xs: "column",
+                sm: "column",
+                md: "row",
+                lg: "row",
+                xl: "row",
+              },
+            }}
           >
-            <Box width={"20%"}>
+            <Box
+              sx={{
+                fontSize: {
+                  xs: "11px",
+                  sm: "13px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "14px",
+                },
+              }}
+            >
               <span
                 style={{
                   color: "#0029FF",
-                  fontSize: "16px",
                   fontWeight: 400,
                   marginLeft: "20%",
                 }}
@@ -281,7 +410,7 @@ export default function StartNewCoin(props) {
                 image
               </span>
             </Box>
-            <Box width={"75%"} height={"64px"}>
+            <Box width={"75%"} height={"64px"} mr={"5px"}>
               <Box
                 width={"100%"}
                 height={"60px"}
@@ -292,8 +421,8 @@ export default function StartNewCoin(props) {
               >
                 <img
                   src={pepecoinRectangle}
-                  width={"40px"}
-                  height={"40px"}
+                  width={"30px"}
+                  height={"30px"}
                   alt="selected Image"
                 />
                 <label
@@ -309,6 +438,7 @@ export default function StartNewCoin(props) {
                     justifyContent: "center",
                     alignItems: "center",
                     gap: 10,
+                    fontSize: "13px",
                   }}
                 >
                   Upload{" "}
@@ -338,27 +468,74 @@ export default function StartNewCoin(props) {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
+          sx={{
+            fontSize: {
+              xs: "12px",
+              sm: "13px",
+              md: "14px",
+              lg: "14px",
+              xl: "14px",
+            },
+          }}
         >
-          <span style={{ fontSize: "16px", fontWeight: 400 }}>
-            Show more options
-          </span>
-          <ArrowDropDown sx={{ fontSize: "32px" }} />
+          <span style={{ fontWeight: 400 }}>Show more options</span>
+          <ArrowDropDown
+            sx={{
+              fontSize: {
+                xs: "12px",
+                sm: "13px",
+                md: "14px",
+                lg: "14px",
+                xl: "14px",
+              },
+            }}
+          />
         </Box>
 
         <Box
           marginLeft={"6%"}
           marginTop={"1%"}
-          width={"290px"}
-          height={"45px"}
+          // height={"45px"}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
           gap={2}
+          sx={{
+            flexDirection: {
+              xs: "column",
+              sm: "column",
+              md: "row",
+              lg: "row",
+              xl: "row",
+            },
+          }}
         >
-          <button
+          <Button
+            sx={{
+              width: {
+                xs: "100px",
+                sm: "100px",
+                md: "139px",
+                lg: "139px",
+                xl: "139px",
+              },
+
+              fontSize: {
+                xs: "10px",
+                sm: "12px",
+                md: "15px",
+                lg: "16px",
+                xl: "16px",
+              },
+              height: {
+                xs: "20px",
+                sm: "20px",
+                md: "40px",
+                lg: "40px",
+                xl: "40px",
+              },
+            }}
             style={{
-              width: "139px",
-              height: "40px",
               backgroundColor: "#EEEEEE",
               border: "1px solid #000000",
               borderRadius: "12px",
@@ -367,12 +544,13 @@ export default function StartNewCoin(props) {
               justifyContent: "center",
               alignItems: "center",
               fontFamily: "Perfect_DOSVGA",
-              fontSize: "16px",
               fontWeight: 400,
+              textTransform: "capitalize",
+              color: "black",
             }}
           >
             Create Coin
-          </button>
+          </Button>
           <Box
             width={"135px"}
             height={"36px"}
@@ -380,10 +558,10 @@ export default function StartNewCoin(props) {
             flexDirection={"column"}
             gap={0.5}
           >
-            <span style={{ fontSize: "16px", fontWeight: 400, opacity: "20%" }}>
+            <span style={{ fontSize: "15px", fontWeight: 400, opacity: "20%" }}>
               Cost to deploy:
             </span>
-            <span style={{ fontSize: "16px", fontWeight: 400 }}>0.1 ETH</span>
+            <span style={{ fontSize: "15px", fontWeight: 400 }}>0.1 ETH</span>
           </Box>
         </Box>
       </Box>

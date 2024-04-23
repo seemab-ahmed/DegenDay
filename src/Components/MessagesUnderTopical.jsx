@@ -32,11 +32,28 @@ export const MessagesUnderTopical = (props) => {
         display={"flex"}
         alignItems={"center"}
         justifyContent={"space-between"}
-        gap={"5px"}
+        gap={"10px"}
         padding={"5px 10px"}
+        sx={{
+          flexDirection: {
+            xs: "column",
+            sm: "column",
+            md: "row",
+            lg: "row",
+            xl: "row",
+          },
+        }}
       >
         <Typography
-          fontSize={"14px"}
+          sx={{
+            fontSize: {
+              xs: "11px",
+              sm: "14px",
+              md: "16px",
+              lg: "16px",
+              xl: "16px",
+            },
+          }}
           lineHeight={"14px"}
           fontWeight={"400"}
           fontFamily={"Perfect_DOSVGA"}
@@ -79,6 +96,16 @@ export const MessagesUnderTopical = (props) => {
           gap={"15px"}
           padding={"5px 10px"}
           bgcolor={"#EEEEEE"}
+          sx={{
+            flexDirection: {
+              xs: "column",
+              sm: "column",
+              md: "row",
+              lg: "row",
+              xl: "row",
+            },
+            cursor: "pointer",
+          }}
         >
           <Box
             component={"img"}
@@ -96,7 +123,15 @@ export const MessagesUnderTopical = (props) => {
               Title
             </Typography>
             <Typography
-              fontSize={"14px"}
+              sx={{
+                fontSize: {
+                  xs: "11px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "16px",
+                },
+              }}
               lineHeight={"14px"}
               fontWeight={"400"}
               fontFamily={"Perfect_DOSVGA"}
@@ -105,9 +140,30 @@ export const MessagesUnderTopical = (props) => {
               eius vitae minima perferendis! Dolorem eos, reiciendis deserunt
               esse vero accusamus.
             </Typography>
-            <Box display={"flex"} gap={"10px"} alignItems={"center"}>
+            <Box
+              display={"flex"}
+              gap={"10px"}
+              alignItems={"center"}
+              sx={{
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                  lg: "row",
+                  xl: "row",
+                },
+              }}
+            >
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "11px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "16px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -117,40 +173,56 @@ export const MessagesUnderTopical = (props) => {
                 <span style={{ color: "#333399" }}>under the topic</span>{" "}
                 created by the user
               </Typography>
-              <Box
-                component={"img"}
-                src={pepeCoinLogo}
-                width={"18px"}
-                height={"18px"}
-              />
-              <Typography
-                fontSize={"16px"}
-                lineHeight={"16px"}
-                fontWeight={"400"}
-                fontFamily={"Perfect_DOSVGA"}
-                color={"#333399"}
-              >
-                0x0000
-              </Typography>
+              <Box display={"flex"} gap={"10px"} alignItems={"center"}>
+                <Box
+                  component={"img"}
+                  src={pepeCoinLogo}
+                  width={"18px"}
+                  height={"18px"}
+                />
+                <Typography
+                  fontSize={"16px"}
+                  lineHeight={"16px"}
+                  fontWeight={"400"}
+                  fontFamily={"Perfect_DOSVGA"}
+                  color={"#333399"}
+                >
+                  0x0000
+                </Typography>
 
-              <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
+                <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
 
-              <Box>
-                <CustonBadge badgeContent={2}>
-                  <FavoriteIcon />
-                </CustonBadge>
-              </Box>
-              <Box ml={"8px"}>
-                <CustonBadge badgeContent={2}>
-                  <ChatBubbleIcon />
-                </CustonBadge>
+                <Box>
+                  <CustonBadge badgeContent={2}>
+                    <FavoriteIcon />
+                  </CustonBadge>
+                </Box>
+                <Box ml={"8px"}>
+                  <CustonBadge badgeContent={2}>
+                    <ChatBubbleIcon />
+                  </CustonBadge>
+                </Box>
               </Box>
             </Box>
           </Box>
         </Box>
 
         {/* 2nd */}
-        <Box display={"flex"} gap={"15px"} padding={"5px 10px"}>
+        <Box
+          display={"flex"}
+          gap={"15px"}
+          padding={"5px 10px"}
+          sx={{
+            flexDirection: {
+              xs: "column",
+              sm: "column",
+              md: "row",
+              lg: "row",
+              xl: "row",
+            },
+            cursor: "pointer",
+          }}
+        >
           <Box
             component={"img"}
             src={pepeCoinIcon}
@@ -162,7 +234,9 @@ export const MessagesUnderTopical = (props) => {
               <Box
                 display={"flex"}
                 justifyContent={"space-between"}
+                gap={"5px"}
                 alignItems={"center"}
+                mb={"5px"}
               >
                 <Typography
                   fontSize={"16px"}
@@ -194,11 +268,33 @@ export const MessagesUnderTopical = (props) => {
               <Box
                 component={"img"}
                 src={pepen}
-                width={"323.38px"}
-                height={"140px"}
+                sx={{
+                  width: {
+                    xs: "200px",
+                    sm: "200px",
+                    md: "300.38px",
+                    lg: "300.38px",
+                    xl: "323.38px",
+                  },
+                  height: {
+                    xs: "80px",
+                    sm: "100px",
+                    md: "110px",
+                    lg: "120px",
+                    xl: "140px",
+                  },
+                }}
               />
               <Typography
-                fontSize={"14px"}
+                sx={{
+                  fontSize: {
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "16px",
+                  },
+                }}
                 lineHeight={"14px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -214,7 +310,15 @@ export const MessagesUnderTopical = (props) => {
                 alignItems={"center"}
               >
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -229,7 +333,21 @@ export const MessagesUnderTopical = (props) => {
               </Box>
             </Box>
             <Divider />
-            <Box display={"flex"} gap={"15px"} padding={"5px 10px"}>
+            <Box
+              display={"flex"}
+              gap={"15px"}
+              padding={"5px 10px"}
+              sx={{
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                  lg: "row",
+                  xl: "row",
+                },
+                cursor: "pointer",
+              }}
+            >
               <Box
                 component={"img"}
                 src={pepeCoinIcon}
@@ -286,7 +404,15 @@ export const MessagesUnderTopical = (props) => {
                   alignItems={"center"}
                 >
                   <Typography
-                    fontSize={"16px"}
+                    sx={{
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "16px",
+                        xl: "16px",
+                      },
+                    }}
                     lineHeight={"16px"}
                     fontWeight={"400"}
                     fontFamily={"Perfect_DOSVGA"}

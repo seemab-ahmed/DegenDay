@@ -56,7 +56,9 @@ export const CoinMessagesArea = (props) => {
         </Box>
 
         <Box
-          width={"36%"}
+          sx={{
+            width: { xs: "10%", sm: "25%", md: "33%", lg: "33%", xl: "33%" },
+          }}
           height={"13px"}
           bgcolor={"#CCCCCC"}
           display={"flex"}
@@ -70,7 +72,11 @@ export const CoinMessagesArea = (props) => {
           <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
           <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
         </Box>
-        <Box width={"20%"}>
+        <Box
+          sx={{
+            width: { xs: "13%", sm: "15%", md: "20%", lg: "20%", xl: "20%" },
+          }}
+        >
           <Box
             display={"flex"}
             gap={"5px"}
@@ -85,8 +91,16 @@ export const CoinMessagesArea = (props) => {
               height={"16px"}
             />
             <Typography
-              sx={{ fontFamily: "Perfect_DOSVGA" }}
-              fontSize={"16px"}
+              sx={{
+                fontFamily: "Perfect_DOSVGA",
+                fontSize: {
+                  xs: "11px",
+                  sm: "11px",
+                  md: "12px",
+                  lg: "16px",
+                  xl: "16px",
+                },
+              }}
               fontWeight={400}
               lineHeight={"16px"}
               align="center"
@@ -97,7 +111,9 @@ export const CoinMessagesArea = (props) => {
         </Box>
 
         <Box
-          width={"36%"}
+          sx={{
+            width: { xs: "10%", sm: "25%", md: "33%", lg: "33%", xl: "33%" },
+          }}
           height={"13px"}
           bgcolor={"#CCCCCC"}
           display={"flex"}
@@ -116,7 +132,7 @@ export const CoinMessagesArea = (props) => {
         width={"100%"}
         height={"80vh"}
         sx={{
-          overflow: "auto",
+          overflowY: "auto",
           //                      //       // for scrollbar styling
           "&::-webkit-scrollbar": {
             width: "15px" /* Width of the scrollbar */,
@@ -167,15 +183,46 @@ export const CoinMessagesArea = (props) => {
                     alignItems={"center"}
                     bgcolor={"#EEEEEE"}
                     padding={"10px 12px"}
+                    sx={{
+                      flexDirection: {
+                        xs: "column",
+                        sm: "column",
+                        md: "row",
+                        lg: "row",
+                        xl: "row",
+                      },
+                    }}
                   >
                     <Box
                       component={"img"}
                       src={homeImage}
-                      width={"16px"}
-                      height={"12px"}
+                      sx={{
+                        width: {
+                          xs: "14px",
+                          sm: "14px",
+                          md: "15px",
+                          lg: "17px",
+                          xl: "17px",
+                        },
+                        height: {
+                          xs: "13px",
+                          sm: "13px",
+                          md: "14px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
                     />
                     <Typography
-                      fontSize={"16px"}
+                      sx={{
+                        fontSize: {
+                          xs: "14px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
                       lineHeight={"16px"}
                       fontWeight={"400"}
                       fontFamily={"Perfect_DOSVGA"}
@@ -200,22 +247,53 @@ export const CoinMessagesArea = (props) => {
                         dropOptions.dropOption == false ? "#EEEEEE" : "#333399"
                       }
                       padding={"10px 12px"}
-                      sx={{ cursor: "pointer" }}
+                      sx={{
+                        flexDirection: {
+                          xs: "column",
+                          sm: "column",
+                          md: "row",
+                          lg: "row",
+                          xl: "row",
+                        },
+                        cursor: "pointer",
+                      }}
                     >
                       <Box
                         component={"img"}
                         src={homeImage}
-                        width={"16px"}
-                        height={"12px"}
+                        sx={{
+                          width: {
+                            xs: "14px",
+                            sm: "14px",
+                            md: "15px",
+                            lg: "17px",
+                            xl: "17px",
+                          },
+                          height: {
+                            xs: "13px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "16px",
+                            xl: "16px",
+                          },
+                        }}
                       />
                       <Typography
-                        fontSize={"16px"}
                         lineHeight={"16px"}
                         color={
                           dropOptions.dropOption == false ? "inherit" : "white"
                         }
                         fontWeight={"400"}
                         fontFamily={"Perfect_DOSVGA"}
+                        sx={{
+                          fontSize: {
+                            xs: "11px",
+                            sm: "14px",
+                            md: "16px",
+                            lg: "16px",
+                            xl: "16px",
+                          },
+                        }}
                       >
                         topical title
                       </Typography>
@@ -253,7 +331,16 @@ export const CoinMessagesArea = (props) => {
                                   ? "#333399"
                                   : "#EEEEEE"
                               }`}
-                              sx={{ cursor: "pointer" }}
+                              sx={{
+                                flexDirection: {
+                                  xs: "column",
+                                  sm: "column",
+                                  md: "row",
+                                  lg: "row",
+                                  xl: "row",
+                                },
+                                cursor: "pointer",
+                              }}
                               onClick={() => {
                                 setConditionalRendering("underTheTopic");
                                 setItemIndex(item);
@@ -262,11 +349,33 @@ export const CoinMessagesArea = (props) => {
                               <Box
                                 component={"img"}
                                 src={homeImage}
-                                width={"16px"}
-                                height={"12px"}
+                                sx={{
+                                  width: {
+                                    xs: "14px",
+                                    sm: "14px",
+                                    md: "15px",
+                                    lg: "17px",
+                                    xl: "17px",
+                                  },
+                                  height: {
+                                    xs: "13px",
+                                    sm: "13px",
+                                    md: "14px",
+                                    lg: "16px",
+                                    xl: "16px",
+                                  },
+                                }}
                               />
                               <Typography
-                                fontSize={"16px"}
+                                sx={{
+                                  fontSize: {
+                                    xs: "11px",
+                                    sm: "14px",
+                                    md: "16px",
+                                    lg: "16px",
+                                    xl: "16px",
+                                  },
+                                }}
                                 lineHeight={"16px"}
                                 fontWeight={"400"}
                                 fontFamily={"Perfect_DOSVGA"}
@@ -295,16 +404,47 @@ export const CoinMessagesArea = (props) => {
                         dropOptions.dropOption1 == false ? "#EEEEEE" : "#333399"
                       }
                       padding={"10px 12px"}
-                      sx={{ cursor: "pointer" }}
+                      sx={{
+                        flexDirection: {
+                          xs: "column",
+                          sm: "column",
+                          md: "row",
+                          lg: "row",
+                          xl: "row",
+                        },
+                        cursor: "pointer",
+                      }}
                     >
                       <Box
                         component={"img"}
                         src={homeImage}
-                        width={"16px"}
-                        height={"12px"}
+                        sx={{
+                          width: {
+                            xs: "14px",
+                            sm: "14px",
+                            md: "15px",
+                            lg: "17px",
+                            xl: "17px",
+                          },
+                          height: {
+                            xs: "13px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "16px",
+                            xl: "16px",
+                          },
+                        }}
                       />
                       <Typography
-                        fontSize={"16px"}
+                        sx={{
+                          fontSize: {
+                            xs: "11px",
+                            sm: "14px",
+                            md: "16px",
+                            lg: "16px",
+                            xl: "16px",
+                          },
+                        }}
                         lineHeight={"16px"}
                         color={
                           dropOptions.dropOption1 == false ? "inherit" : "white"
@@ -349,7 +489,16 @@ export const CoinMessagesArea = (props) => {
                                   ? "#333399"
                                   : "#EEEEEE"
                               }`}
-                              sx={{ cursor: "pointer" }}
+                              sx={{
+                                flexDirection: {
+                                  xs: "column",
+                                  sm: "column",
+                                  md: "row",
+                                  lg: "row",
+                                  xl: "row",
+                                },
+                                cursor: "pointer",
+                              }}
                               onClick={() => {
                                 setConditionalRendering("underTheTopic2");
                                 setItemIndex(items);
@@ -358,11 +507,33 @@ export const CoinMessagesArea = (props) => {
                               <Box
                                 component={"img"}
                                 src={homeImage}
-                                width={"16px"}
-                                height={"12px"}
+                                sx={{
+                                  width: {
+                                    xs: "14px",
+                                    sm: "14px",
+                                    md: "15px",
+                                    lg: "17px",
+                                    xl: "17px",
+                                  },
+                                  height: {
+                                    xs: "13px",
+                                    sm: "13px",
+                                    md: "14px",
+                                    lg: "16px",
+                                    xl: "16px",
+                                  },
+                                }}
                               />
                               <Typography
-                                fontSize={"16px"}
+                                sx={{
+                                  fontSize: {
+                                    xs: "11px",
+                                    sm: "14px",
+                                    md: "16px",
+                                    lg: "16px",
+                                    xl: "16px",
+                                  },
+                                }}
                                 lineHeight={"16px"}
                                 fontWeight={"400"}
                                 fontFamily={"Perfect_DOSVGA"}
@@ -396,17 +567,19 @@ export const CoinMessagesArea = (props) => {
                     </Typography>
                   </Box>
                 </Box>
-                {conditionalRendering === null ? (
-                  <MessagesHome />
-                ) : conditionalRendering === "underTheTopic" ? (
-                  <MessagesTopicalTitle
-                    setRenderFromMessageUnderTopical={setConditionalRendering}
-                  />
-                ) : (
-                  <MessagesUnderTopical
-                    setRenderFromMessageUnderTopical={setConditionalRendering}
-                  />
-                )}
+                <Box>
+                  {conditionalRendering === null ? (
+                    <MessagesHome />
+                  ) : conditionalRendering === "underTheTopic" ? (
+                    <MessagesTopicalTitle
+                      setRenderFromMessageUnderTopical={setConditionalRendering}
+                    />
+                  ) : (
+                    <MessagesUnderTopical
+                      setRenderFromMessageUnderTopical={setConditionalRendering}
+                    />
+                  )}
+                </Box>
               </Box>
             </Grid>
           </Grid>
@@ -423,6 +596,4 @@ const style = {
   width: "85%",
   bgcolor: "#FFFFFF",
   border: "none",
-  //       overflowX:'hidden',
-  //       overflowY:'auto',
 };

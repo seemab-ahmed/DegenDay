@@ -6,22 +6,30 @@ export const CoinTxs = () => {
   return (
     <Box>
       <Box
-        border={"1px solid black"}
+        // border={"1px solid black"}
         display={"flex"}
         justifyContent={"center"}
       >
-        <Grid container>
+        <Grid container sx={{ overflow: "auto" }}>
           <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
             <Box border={"1px solid #00000026"}>
               <Box
-                padding={"5px 1rem"}
+                padding={"5px"}
                 bgcolor={"#C0C0C0"}
                 boxShadow={"1px 1px 1px white inset"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
                   lineHeight={"16px"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   fontWeight={500}
                 >
                   account
@@ -33,14 +41,22 @@ export const CoinTxs = () => {
           <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
             <Box border={"1px solid #00000026"}>
               <Box
-                padding={"5px 1rem"}
+                padding={"5px"}
                 bgcolor={"#C0C0C0"}
                 boxShadow={"1px 1px 1px white inset"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
                   lineHeight={"16px"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "11px",
+                      sm: "11px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   fontWeight={500}
                 >
                   type
@@ -51,14 +67,22 @@ export const CoinTxs = () => {
           <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
             <Box border={"1px solid #00000026"}>
               <Box
-                padding={"5px 1rem"}
+                padding={"5px"}
                 bgcolor={"#C0C0C0"}
                 boxShadow={"1px 1px 1px white inset"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
                   lineHeight={"16px"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "11px",
+                      sm: "11px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   fontWeight={500}
                 >
                   ETH
@@ -69,14 +93,22 @@ export const CoinTxs = () => {
           <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
             <Box border={"1px solid #00000026"}>
               <Box
-                padding={"5px 1rem"}
+                padding={"5px"}
                 bgcolor={"#C0C0C0"}
                 boxShadow={"1px 1px 1px white inset"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
                   lineHeight={"16px"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "11px",
+                      sm: "11px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   fontWeight={500}
                 >
                   pepecoin.day
@@ -87,14 +119,22 @@ export const CoinTxs = () => {
           <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
             <Box border={"1px solid #00000026"}>
               <Box
-                padding={"5px 1rem"}
+                padding={"5px"}
                 bgcolor={"#C0C0C0"}
                 boxShadow={"1px 1px 1px white inset"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
                   lineHeight={"16px"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "11px",
+                      sm: "11px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   fontWeight={500}
                 >
                   date
@@ -105,14 +145,22 @@ export const CoinTxs = () => {
           <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
             <Box border={"1px solid #00000026"}>
               <Box
-                padding={"5px 1rem"}
+                padding={"5px"}
                 bgcolor={"#C0C0C0"}
                 boxShadow={"1px 1px 1px white inset"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
                   lineHeight={"16px"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "11px",
+                      sm: "11px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   fontWeight={500}
                 >
                   transaction
@@ -140,14 +188,29 @@ export const CoinTxs = () => {
           },
         }}
       >
-        <Grid container>
+        <Grid container overflow={"auto"}>
           <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
             <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
               <Box
                 display={"flex"}
+                sx={{
+                  flexDirection: {
+                    xs: "column",
+                    sm: "column",
+                    md: "row",
+                    lg: "row",
+                    xl: "row",
+                  },
+                  padding: {
+                    xs: "0px 1rem",
+                    sm: "0px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 alignItems={"center"}
                 gap={"10px"}
-                padding={"14px 1rem"}
                 bgcolor={"#DDDDDD"}
                 borderRight={"1px solid #00000026"}
               >
@@ -159,7 +222,15 @@ export const CoinTxs = () => {
                 />
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "9px",
+                      sm: "11px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -169,6 +240,22 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  flexDirection: {
+                    xs: "column",
+                    sm: "column",
+                    md: "row",
+                    lg: "row",
+                    xl: "row",
+                  },
+                  padding: {
+                    xs: "0px 1rem",
+                    sm: "0px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 alignItems={"center"}
                 gap={"10px"}
                 padding={"14px 1rem"}
@@ -184,7 +271,15 @@ export const CoinTxs = () => {
 
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "9px",
+                      sm: "11px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -194,6 +289,22 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  flexDirection: {
+                    xs: "column",
+                    sm: "column",
+                    md: "row",
+                    lg: "row",
+                    xl: "row",
+                  },
+                  padding: {
+                    xs: "0px 1rem",
+                    sm: "0px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 alignItems={"center"}
                 gap={"10px"}
                 padding={"14px 1rem"}
@@ -208,7 +319,15 @@ export const CoinTxs = () => {
                 />
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "9px",
+                      sm: "11px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -218,6 +337,22 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  flexDirection: {
+                    xs: "column",
+                    sm: "column",
+                    md: "row",
+                    lg: "row",
+                    xl: "row",
+                  },
+                  padding: {
+                    xs: "0px 1rem",
+                    sm: "0px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 alignItems={"center"}
                 gap={"10px"}
                 padding={"14px 1rem"}
@@ -232,7 +367,15 @@ export const CoinTxs = () => {
                 />
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "9px",
+                      sm: "11px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -242,6 +385,22 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  flexDirection: {
+                    xs: "column",
+                    sm: "column",
+                    md: "row",
+                    lg: "row",
+                    xl: "row",
+                  },
+                  padding: {
+                    xs: "0px 1rem",
+                    sm: "0px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 alignItems={"center"}
                 gap={"10px"}
                 padding={"14px 1rem"}
@@ -256,79 +415,15 @@ export const CoinTxs = () => {
                 />
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  0x2Ec1
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#DDDDDD"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Box
-                  width={"16px"}
-                  height={"16px"}
-                  component={"img"}
-                  src={pepeCoinLogo}
-                />
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  0x2Ec1
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#DDDDDD"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Box
-                  width={"16px"}
-                  height={"16px"}
-                  component={"img"}
-                  src={pepeCoinLogo}
-                />
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  0x2Ec1
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#DDDDDD"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Box
-                  width={"16px"}
-                  height={"16px"}
-                  component={"img"}
-                  src={pepeCoinLogo}
-                />
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "9px",
+                      sm: "11px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -343,14 +438,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#03A100"}
@@ -361,14 +472,31 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
+                // gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#FF0000"}
@@ -379,14 +507,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#03A100"}
@@ -397,14 +541,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#FF0000"}
@@ -415,14 +575,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#03A100"}
@@ -430,75 +606,38 @@ export const CoinTxs = () => {
                   buy
                 </Typography>
               </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"#FF0000"}
-                >
-                  sale
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"#03A100"}
-                >
-                  buy
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"#FF0000"}
-                >
-                  sale
-                </Typography>
-              </Box>
             </Box>
           </Grid>
           <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
             <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
-                gap={"10px"}
+                // gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "10px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -508,15 +647,32 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
-                gap={"10px"}
+                // gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "10px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -526,15 +682,32 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
-                gap={"10px"}
+                // gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "10px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -544,15 +717,32 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
-                gap={"10px"}
+                // gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "10px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -560,71 +750,35 @@ export const CoinTxs = () => {
                   0.01
                 </Typography>
               </Box>
+
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
-                gap={"10px"}
+                // gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  0.01
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  0.01
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  0.01
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "10px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -638,15 +792,32 @@ export const CoinTxs = () => {
             <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
+                justifyContent={"center"}
                 alignItems={"center"}
-                gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -656,15 +827,31 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
-                gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -674,15 +861,31 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
-                gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -692,15 +895,31 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
-                gap={"10px"}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -710,6 +929,15 @@ export const CoinTxs = () => {
               </Box>
               <Box
                 display={"flex"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 alignItems={"center"}
                 gap={"10px"}
                 padding={"14px 1rem"}
@@ -718,61 +946,15 @@ export const CoinTxs = () => {
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  252.00k
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  252.00k
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  252.00k
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -787,14 +969,36 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  padding: {
+                    xs: "6px 1rem",
+                    sm: "6px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -805,14 +1009,77 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  padding: {
+                    xs: "6px 1rem",
+                    sm: "6px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
+                  lineHeight={"16px"}
+                  fontWeight={400}
+                  color={"gray"}
+                >
+                  13h ago
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                alignItems={"center"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  padding: {
+                    xs: "6px 1rem",
+                    sm: "6px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
+                bgcolor={"#EEEEEE"}
+                borderRight={"1px solid #00000026"}
+              >
+                <Typography
+                  fontFamily={"Perfect_DOSVGA"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -823,14 +1090,36 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  padding: {
+                    xs: "6px 1rem",
+                    sm: "6px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -841,86 +1130,36 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  padding: {
+                    xs: "6px 1rem",
+                    sm: "6px 1rem",
+                    md: "14px 1rem",
+                    lg: "14px 1rem",
+                    xl: "14px 1rem",
+                  },
+                }}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  13h ago
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  13h ago
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  13h ago
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"gray"}
-                >
-                  13h ago
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"gray"}
@@ -935,14 +1174,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#4747FA"}
@@ -953,14 +1208,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#4747FA"}
@@ -971,14 +1242,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#4747FA"}
@@ -989,14 +1276,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#4747FA"}
@@ -1007,68 +1310,30 @@ export const CoinTxs = () => {
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                gap={"10px"}
+                sx={{
+                  justifyContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                }}
                 padding={"14px 1rem"}
                 bgcolor={"#EEEEEE"}
                 borderRight={"1px solid #00000026"}
               >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"#4747FA"}
-                >
-                  0x4645
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"#4747FA"}
-                >
-                  0x4645
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
-                  lineHeight={"16px"}
-                  fontWeight={400}
-                  color={"#4747FA"}
-                >
-                  0x4645
-                </Typography>
-              </Box>
-              <Box
-                display={"flex"}
-                alignItems={"center"}
-                gap={"10px"}
-                padding={"14px 1rem"}
-                bgcolor={"#EEEEEE"}
-                borderRight={"1px solid #00000026"}
-              >
-                <Typography
-                  fontFamily={"Perfect_DOSVGA"}
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={400}
                   color={"#4747FA"}

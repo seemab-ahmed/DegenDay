@@ -57,7 +57,9 @@ export default function Wallet(props) {
         </Box>
 
         <Box
-          width={"33%"}
+        sx={{
+          width: { xs: "20%", sm: "30%", md: "36%", lg: "36%", xl: "36%" },
+        }}
           height={"13px"}
           bgcolor={"#CCCCCC"}
           display={"flex"}
@@ -86,8 +88,16 @@ export default function Wallet(props) {
               height={"16px"}
             />
             <Typography
-              fontFamily={"Perfect_DOSVGA"}
-              fontSize={"16px"}
+          sx={{
+            fontSize: {
+              xs: "10px",
+              sm: "12px",
+              md: "15px",
+              lg: "16px",
+              xl: "16px",
+            },
+            fontFamily: "Perfect_DOSVGA",
+          }}
               fontWeight={400}
               lineHeight={"16px"}
               align="center"
@@ -98,7 +108,9 @@ export default function Wallet(props) {
         </Box>
 
         <Box
-          width={"33%"}
+         sx={{
+          width: { xs: "20%", sm: "30%", md: "36%", lg: "36%", xl: "36%" },
+        }}
           height={"13px"}
           bgcolor={"#CCCCCC"}
           display={"flex"}
@@ -148,7 +160,7 @@ export default function Wallet(props) {
           C:
           <ArrowRight /> file.bat
         </Box>
-        <Box width={"100%"} display={"flex"}>
+        <Box width={"100%"} display={"flex"} sx={{flexDirection:{xs:'column',sm:'column',md:'row',lg:'row',xl:'row'},alignItems:{xs:'center',sm:'center',md:'',lg:'',xl:''}}} >
           <Box
             width={"70%"}
             height={"40px"}
@@ -224,14 +236,25 @@ export default function Wallet(props) {
               <Grid item xl={2.4} lg={2.4} md={2.4} sm={2.4} xs={2.4}>
                 <Box border={"1px solid #00000026"}>
                   <Box
-                    padding={"5px 1rem"}
+                                      sx={{padding:{xs:'0px 0px',sm:'5px 1rem',md:'5px 1rem',lg:'5px 1rem',xl:'5px 1rem'}}}
+                                      // padding={"5px 1rem"}
                     bgcolor={"#C0C0C0"}
                     boxShadow={"1px 1px 1px white inset"}
                   >
                     <Typography
-                      fontFamily={"Perfect_DOSVGA"}
+                     sx={{
+                      fontSize: {
+                        xs: "10px",
+                        sm: "12px",
+                        md: "15px",
+                        lg: "16px",
+                        xl: "16px",
+                      },
+                      fontFamily: "Perfect_DOSVGA",
+                      textAlign:{xs:'center',sm:'center',md:'left',lg:'left',xl:'left'}
+
+                    }}
                       lineHeight={"16px"}
-                      fontSize={"16px"}
                       fontWeight={500}
                     >
                       token
@@ -243,14 +266,24 @@ export default function Wallet(props) {
               <Grid item xl={2.4} lg={2.4} md={2.4} sm={2.4} xs={2.4}>
                 <Box border={"1px solid #00000026"}>
                   <Box
-                    padding={"5px 1rem"}
-                    bgcolor={"#C0C0C0"}
+                                      sx={{padding:{xs:'0px 0px',sm:'5px 1rem',md:'5px 1rem',lg:'5px 1rem',xl:'5px 1rem'}}}
+                                      bgcolor={"#C0C0C0"}
                     boxShadow={"1px 1px 1px white inset"}
                   >
                     <Typography
-                      fontFamily={"Perfect_DOSVGA"}
+                      sx={{
+                        fontSize: {
+                          xs: "10px",
+                          sm: "12px",
+                          md: "15px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                        fontFamily: "Perfect_DOSVGA",
+                        textAlign:{xs:'center',sm:'center',md:'left',lg:'left',xl:'left'}
+
+                      }}
                       lineHeight={"16px"}
-                      fontSize={"16px"}
                       fontWeight={500}
                     >
                       invested
@@ -261,14 +294,25 @@ export default function Wallet(props) {
               <Grid item xl={2.4} lg={2.4} md={2.4} sm={2.4} xs={2.4}>
                 <Box border={"1px solid #00000026"}>
                   <Box
-                    padding={"5px 1rem"}
+                                      sx={{padding:{xs:'0px 0px',sm:'5px 1rem',md:'5px 1rem',lg:'5px 1rem',xl:'5px 1rem'}}}
+
                     bgcolor={"#C0C0C0"}
                     boxShadow={"1px 1px 1px white inset"}
                   >
                     <Typography
-                      fontFamily={"Perfect_DOSVGA"}
+                         sx={{
+                          fontSize: {
+                            xs: "10px",
+                            sm: "12px",
+                            md: "15px",
+                            lg: "16px",
+                            xl: "16px",
+                          },
+                          fontFamily: "Perfect_DOSVGA",
+                          textAlign:{xs:'center',sm:'center',md:'left',lg:'left',xl:'left'}
+
+                        }}
                       lineHeight={"16px"}
-                      fontSize={"16px"}
                       fontWeight={500}
                     >
                       remaining
@@ -279,14 +323,24 @@ export default function Wallet(props) {
               <Grid item xl={2.4} lg={2.4} md={2.4} sm={2.4} xs={2.4}>
                 <Box border={"1px solid #00000026"}>
                   <Box
-                    padding={"5px 1rem"}
-                    bgcolor={"#C0C0C0"}
+                                      sx={{padding:{xs:'0px 0px',sm:'5px 1rem',md:'5px 1rem',lg:'5px 1rem',xl:'5px 1rem'}}}
+                                      bgcolor={"#C0C0C0"}
                     boxShadow={"1px 1px 1px white inset"}
                   >
                     <Typography
-                      fontFamily={"Perfect_DOSVGA"}
+                    sx={{
+                      fontSize: {
+                        xs: "10px",
+                        sm: "12px",
+                        md: "15px",
+                        lg: "16px",
+                        xl: "16px",
+                      },
+                      fontFamily: "Perfect_DOSVGA",
+                      textAlign:{xs:'center',sm:'center',md:'left',lg:'left',xl:'left'}
+
+                    }}
                       lineHeight={"16px"}
-                      fontSize={"16px"}
                       fontWeight={500}
                     >
                       sold
@@ -297,14 +351,23 @@ export default function Wallet(props) {
               <Grid item xl={2.4} lg={2.4} md={2.4} sm={2.4} xs={2.4}>
                 <Box border={"1px solid #00000026"}>
                   <Box
-                    padding={"5px 1rem"}
-                    bgcolor={"#C0C0C0"}
+                  sx={{padding:{xs:'0px 0px',sm:'0px 0px',md:'0px 1rem',lg:'5px 1rem',xl:'5px 1rem'}}}
+                  bgcolor={"#C0C0C0"}
                     boxShadow={"1px 1px 1px white inset"}
                   >
                     <Typography
-                      fontFamily={"Perfect_DOSVGA"}
-                      lineHeight={"16px"}
-                      fontSize={"16px"}
+                   sx={{
+                    fontSize: {
+                      xs: "10px",
+                      sm: "12px",
+                      md: "15px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                    fontFamily: "Perfect_DOSVGA",
+                    lineHeight:{xs:'10px',sm:'15px',md:'16x',lg:'16px',xl:'16px'},
+                    textAlign:{xs:'center',sm:'center',md:'left',lg:'left',xl:'left'}
+                  }}
                       fontWeight={500}
                     >
                       change in P&L
@@ -333,7 +396,7 @@ export default function Wallet(props) {
                         bgcolor={"#DDDDDD"}
                         borderRight={"1px solid #00000026"}
                       >
-                        <Box display={"flex"} alignItems={"center"} gap={1}>
+                        <Box display={"flex"} sx={{flexDirection:{xs:'column',sm:'column',md:'row',lg:'row',xl:'row'}}}   gap={1}>
                           <Box
                             ml={2}
                             width={"16px"}
@@ -342,9 +405,18 @@ export default function Wallet(props) {
                             src={pepeCoinLogo}
                           />
                           <Typography
+                           
                             mt={0.2}
-                            fontFamily={"Perfect_DOSVGA"}
-                            fontSize={"16px"}
+                            sx={{
+                              fontSize: {
+                                xs: "10px",
+                                sm: "11px",
+                                md: "15px",
+                                lg: "16px",
+                                xl: "16px",
+                              },
+                              fontFamily: "Perfect_DOSVGA",
+                            }}
                             fontWeight={400}
                           >
                             {items / 5 === 3
@@ -368,7 +440,8 @@ export default function Wallet(props) {
                         bgcolor={"#EEEEEE"}
                         borderRight={"1px solid #00000026"}
                       >
-                        <Box display={"flex"} alignItems={"center"} gap={1}>
+                        <Box display={"flex"}    sx={{ flexDirection:{xs:'column',sm:'column',md:'row',lg:'row',xl:'row'},
+                          }}alignItems={"center"} gap={1}>
                           <Box
                             ml={2}
                             width={"18px"}
@@ -378,8 +451,16 @@ export default function Wallet(props) {
                           />
                           <Typography
                             mt={0.2}
-                            fontFamily={"Perfect_DOSVGA"}
-                            fontSize={"16px"}
+                            sx={{
+                              fontSize: {
+                                xs: "10px",
+                                sm: "11px",
+                                md: "15px",
+                                lg: "16px",
+                                xl: "16px",
+                              },
+                              fontFamily: "Perfect_DOSVGA",
+                            }}
                             fontWeight={400}
                           >
                             0
@@ -400,7 +481,8 @@ export default function Wallet(props) {
                       >
                         <Box display={"flex"} alignItems={"center"} gap={1}>
                           <Box
-                            ml={2}
+                             sx={{ ml:{xs:0.7,sm:0.5,md:2,lg:2,xl:2},
+                            }}
                             width={"18px"}
                             height={"18px"}
                             component={"img"}
@@ -408,18 +490,33 @@ export default function Wallet(props) {
                           />
                           <Typography
                             mt={0.2}
-                            fontFamily={"Perfect_DOSVGA"}
-                            fontSize={"16px"}
+                            sx={{
+                              fontSize: {
+                                xs: "9px",
+                                sm: "9px",
+                                md: "15px",
+                                lg: "16px",
+                                xl: "16px",
+                              },
+                              fontFamily: "Perfect_DOSVGA",
+                            }}
                             fontWeight={400}
                           >
                             {items / 5 === 5 ? "0.012182" : "0"}
                           </Typography>
                         </Box>
                         <Typography
-                          ml={2.5}
-                          //   mt={0.2}
-                          fontFamily={"Perfect_DOSVGA"}
-                          fontSize={"16px"}
+                                sx={{
+                                  fontSize: {
+                                    xs: "10px",
+                                    sm: "11px",
+                                    md: "15px",
+                                    lg: "16px",
+                                    xl: "16px",
+                                  },
+                                  ml:{xs:0.7,sm:0.5,md:2.5,lg:2.5,xl:2.5},
+                                  fontFamily: "Perfect_DOSVGA",
+                                }}
                           fontWeight={400}
                         >
                           0
@@ -437,9 +534,10 @@ export default function Wallet(props) {
                         bgcolor={"#EEEEEE"}
                         borderRight={"1px solid #00000026"}
                       >
-                        <Box display={"flex"} alignItems={"center"} gap={1}>
+                        <Box display={"flex"} alignItems={"center"}  gap={1}>
                           <Box
-                            ml={2}
+                           sx={{ ml:{xs:0.7,sm:0.5,md:2,lg:2,xl:2},
+                          }}
                             width={"18px"}
                             height={"18px"}
                             component={"img"}
@@ -447,18 +545,33 @@ export default function Wallet(props) {
                           />
                           <Typography
                             mt={0.2}
-                            fontFamily={"Perfect_DOSVGA"}
-                            fontSize={"16px"}
+                            sx={{
+                              fontSize: {
+                                xs: "10px",
+                                sm: "11px",
+                                md: "15px",
+                                lg: "16px",
+                                xl: "16px",
+                              },
+                              fontFamily: "Perfect_DOSVGA",
+                            }}
                             fontWeight={400}
                           >
                             0
                           </Typography>
                         </Box>
                         <Typography
-                          ml={2.5}
-                          //   mt={0.2}
-                          fontFamily={"Perfect_DOSVGA"}
-                          fontSize={"16px"}
+                            sx={{
+                              fontSize: {
+                                xs: "10px",
+                                sm: "11px",
+                                md: "15px",
+                                lg: "16px",
+                                xl: "16px",
+                              },
+                              ml:{xs:0.7,sm:0.5,md:2.5,lg:2.5,xl:2.5},
+                              fontFamily: "Perfect_DOSVGA",
+                            }}
                           fontWeight={400}
                         >
                           0
@@ -476,10 +589,18 @@ export default function Wallet(props) {
                       borderRight={"1px solid #00000026"}
                     >
                       <Typography
-                        ml={2}
                         mt={0.2}
-                        fontFamily={"Perfect_DOSVGA"}
-                        fontSize={"16px"}
+                        sx={{
+                          fontSize: {
+                            xs: "10px",
+                            sm: "11px",
+                            md: "15px",
+                            lg: "16px",
+                            xl: "16px",
+                          },
+                          ml:{xs:0.3,sm:0.5,md:2,lg:2,xl:2},
+                          fontFamily: "Perfect_DOSVGA",
+                        }}
                         color={items / 5 === 5 ? "#FF0000" : "#03A100"}
                         fontWeight={400}
                       >

@@ -8,12 +8,11 @@ export default function PepCoin_Screen_Icon(props) {
   return (
     <>
       <Box
-        width={"141px"}
-        height={"100px"}
+        width={"100px"}
+        height={"70px"}
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
-        justifyContent={"space-around"}
         sx={{ cursor: "pointer" }}
         onClick={() => {
           props.setRenderFromPepCoin_Screen_Icon("pepeCoin_Day_Open");
@@ -22,8 +21,8 @@ export default function PepCoin_Screen_Icon(props) {
       >
         <Box
           position={"relative"}
-          width={"50px"}
-          height={"50px"}
+          width={"40px"}
+          height={"40px"}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
@@ -54,7 +53,7 @@ export default function PepCoin_Screen_Icon(props) {
           )}
         </Box>
         <Box
-          width={"125px"}
+          width={"100%"}
           height={"18px"}
           bgcolor={"#7373A6"}
           color={"#FFFFFF"}

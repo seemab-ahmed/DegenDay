@@ -45,7 +45,9 @@ export default function File(props) {
       </Box>
       </Box>
 
-<Box width={"36%"} height={"13px"} bgcolor={"#CCCCCC"} display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} >
+<Box   sx={{
+            width: { xs: "10%", sm: "25%", md: "36%", lg: "36%", xl: "36%" },
+          }} height={"13px"} bgcolor={"#CCCCCC"} display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} >
 <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
 <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
 <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
@@ -53,7 +55,7 @@ export default function File(props) {
 <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
 <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
 </Box>
-<Box width={"20%"}>
+<Box sx={{width:{xs:'25%',sm:'26%',md:'20%',lg:'20%',xl:'20%'}}}>
 
       <Box
         display={"flex"}
@@ -69,8 +71,16 @@ export default function File(props) {
           height={"16px"}
         />
         <Typography
-        sx={{fontFamily:'Perfect_DOSVGA'}}
-          fontSize={"16px"}
+      sx={{
+            fontSize: {
+              xs: "10px",
+              sm: "12px",
+              md: "15px",
+              lg: "16px",
+              xl: "16px",
+            },
+            fontFamily: "Perfect_DOSVGA",
+          }}
           fontWeight={400}
           lineHeight={"16px"}
           align="center"
@@ -80,7 +90,9 @@ export default function File(props) {
       </Box>
       </Box>
 
-      <Box width={"36%"} height={"13px"} bgcolor={"#CCCCCC"} display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} >
+      <Box   sx={{
+            width: { xs: "10%", sm: "25%", md: "36%", lg: "36%", xl: "36%" },
+          }} height={"13px"} bgcolor={"#CCCCCC"} display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} >
 <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
 <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
 <Box width={"100%"} height={"1px"} bgcolor={"#999999"}></Box>
@@ -108,13 +120,17 @@ export default function File(props) {
                                           //     },
                                     }} >
                                           <Box mt={1} ml={1} fontSize={"14px"} width={"112.6px"} height={"16px"} display={"flex"} alignItems={"center"}  fontWeight={400}>C:<ArrowRight /> file.bat</Box>
-                                          <Box width={"100%"} mt={1}>
+                                          <Box width={"100%"} mt={1} overflow={"auto"} >
 
                                                 {
                                                       // just using dummy array for maping
                                                       [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2].map((items, index) => {
                                                             return (
-                                                                  <Box key={index} sx={{ cursor: 'pointer' }} mt={1} width={"100%"} display={"flex"} justifyContent={"space-evenly"}>
+                                                                  <Box key={index} sx={{ cursor: 'pointer',display:'flex',
+                                                                  flexDirection:{xs:'column',sm:'column',md:'row',lg:'row',xl:'row'},
+                                                                  alignItems:{xs:'flex-start',sm:'center',md:'',lg:"",xl:''},
+                                                                  justifyContent:'space-evenly', }} mt={1} width={"100%"}
+                                                                  >
                                                                         <Box width={"28%"} sx={{
                                                                               '&:hover': {
                                                                                     backgroundColor: '#DDDDDD', border: '1px solid #C0C0C0' // Background color on hover

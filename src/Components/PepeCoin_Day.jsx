@@ -53,7 +53,9 @@ function PepeCoin_Day(props) {
         </Box>
 
         <Box
-          width={"36%"}
+          sx={{
+            width: { xs: "10%", sm: "25%", md: "36%", lg: "36%", xl: "36%" },
+          }}
           height={"13px"}
           bgcolor={"#CCCCCC"}
           display={"flex"}
@@ -82,8 +84,16 @@ function PepeCoin_Day(props) {
               height={"16px"}
             />
             <Typography
-              sx={{ fontFamily: "Perfect_DOSVGA" }}
-              fontSize={"16px"}
+              sx={{
+                fontSize: {
+                  xs: "11px",
+                  sm: "12px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                },
+                fontFamily: "Perfect_DOSVGA",
+              }}
               fontWeight={400}
               lineHeight={"16px"}
               align="center"
@@ -94,7 +104,9 @@ function PepeCoin_Day(props) {
         </Box>
 
         <Box
-          width={"36%"}
+          sx={{
+            width: { xs: "10%", sm: "25%", md: "36%", lg: "36%", xl: "36%" },
+          }}
           height={"13px"}
           bgcolor={"#CCCCCC"}
           display={"flex"}

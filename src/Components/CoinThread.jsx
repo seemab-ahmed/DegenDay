@@ -12,7 +12,20 @@ export const CoinThread = () => {
   return (
     <Box minHeight={"400px"} border={"1px solid black"} padding={"1rem"}>
       <Box display={"flex"} flexDirection={"column"} gap={"10px"}>
-        <Box display={"flex"} justifyContent={"space-between"}>
+        <Box
+          display={"flex"}
+          justifyContent={"space-between"}
+          sx={{
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              sm: "column",
+              xs: "column",
+            },
+          }}
+          gap={"5px"}
+        >
           <Button
             variant="contained"
             sx={{
@@ -21,10 +34,10 @@ export const CoinThread = () => {
               ":hover": { backgroundColor: "#EEEEEE" },
               color: "black",
               border: "1px solid black",
-              fontSize: "14px",
               lineHeight: "14px",
-              fontWeight: "500",
               fontFamily: "Perfect_DOSVGA",
+              fontSize: "14px",
+              fontWeight: "400",
             }}
           >
             scroll to bottom
@@ -56,11 +69,38 @@ export const CoinThread = () => {
         >
           <Box
             display={"flex"}
+            sx={{
+              flexDirection: {
+                xs: "column",
+                sm: "column",
+                md: "row",
+                lg: "row",
+                xl: "row",
+              },
+            }}
             justifyContent={"space-between"}
             alignItems={"center"}
           >
             {/* user side */}
-            <Box display={"flex"} gap={"1.2rem"}>
+            <Box
+              display={"flex"}
+              sx={{
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                  lg: "row",
+                  xl: "row",
+                },
+                gap: {
+                  xs: "5px",
+                  sm: "5px",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                },
+              }}
+            >
               <Box display={"flex"} gap={"5px"}>
                 <Typography
                   fontSize="14px"
@@ -111,7 +151,20 @@ export const CoinThread = () => {
             </Box>
             {/* reply side */}
             <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
-              <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+              <Box
+                display={"flex"}
+                gap={"5px"}
+                alignItems={"center"}
+                sx={{
+                  flexDirection: {
+                    xs: "column",
+                    sm: "column",
+                    md: "row",
+                    lg: "row",
+                    xl: "row",
+                  },
+                }}
+              >
                 <Typography
                   fontSize="14px"
                   lineHeight="14px"
@@ -172,11 +225,39 @@ export const CoinThread = () => {
         >
           <Box
             display={"flex"}
+            sx={{
+              flexDirection: {
+                xs: "column",
+                sm: "column",
+                md: "row",
+                lg: "row",
+                xl: "row",
+              },
+            }}
             justifyContent={"space-between"}
             alignItems={"center"}
           >
             {/* user side */}
-            <Box display={"flex"} gap={"1.2rem"}>
+            <Box
+              display={"flex"}
+              gap={"1.2rem"}
+              sx={{
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                  lg: "row",
+                  xl: "row",
+                },
+                gap: {
+                  xs: "5px",
+                  sm: "5px",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                },
+              }}
+            >
               <Box display={"flex"} gap={"5px"}>
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
@@ -226,7 +307,20 @@ export const CoinThread = () => {
             </Box>
             {/* reply side */}
             <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
-              <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+              <Box
+                display={"flex"}
+                gap={"5px"}
+                alignItems={"center"}
+                sx={{
+                  flexDirection: {
+                    xs: "column",
+                    sm: "column",
+                    md: "row",
+                    lg: "row",
+                    xl: "row",
+                  },
+                }}
+              >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
                   fontSize="14px"
@@ -288,11 +382,39 @@ export const CoinThread = () => {
         >
           <Box
             display={"flex"}
+            sx={{
+              flexDirection: {
+                xs: "column",
+                sm: "column",
+                md: "row",
+                lg: "row",
+                xl: "row",
+              },
+            }}
             justifyContent={"space-between"}
             alignItems={"center"}
           >
             {/* user side */}
-            <Box display={"flex"} gap={"1.2rem"}>
+            <Box
+              display={"flex"}
+              gap={"1.2rem"}
+              sx={{
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                  lg: "row",
+                  xl: "row",
+                },
+                gap: {
+                  xs: "5px",
+                  sm: "5px",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                },
+              }}
+            >
               <Box display={"flex"} gap={"5px"}>
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
@@ -342,7 +464,20 @@ export const CoinThread = () => {
             </Box>
             {/* reply side */}
             <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
-              <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+              <Box
+                display={"flex"}
+                gap={"5px"}
+                alignItems={"center"}
+                sx={{
+                  flexDirection: {
+                    xs: "column",
+                    sm: "column",
+                    md: "row",
+                    lg: "row",
+                    xl: "row",
+                  },
+                }}
+              >
                 <Typography
                   fontFamily={"Perfect_DOSVGA"}
                   fontSize="14px"
@@ -396,6 +531,13 @@ export const CoinThread = () => {
         </Box>
         <Box>
           <Button
+            onClick={() => {
+              console.log("hello");
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth", // Optional: Scroll behavior
+              });
+            }}
             variant="contained"
             sx={{
               textTransform: "lowercase",

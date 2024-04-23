@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Box, Divider, Grid } from "@mui/material";
 import PepCoin_Screen_Icon from "./PepCoin_Screen_Icon";
 import SideBar from "./SideBar";
@@ -17,11 +18,19 @@ export default function MainWindow() {
   const [currentFileRendering, setCurrentFileRendering] = useState(null);
   return (
     <>
-      <Box bgcolor={"#63639C"} width={"100%"}>
+      <Box
+        bgcolor={"#63639C"}
+        width={"100%"}
+        sx={{
+          height: { xs: "", sm: "", md: "94.8vh", lg: "95.7vh", xl: "100vh" },
+        }}
+      >
         <Grid container gap={9}>
           <Grid item xs={12} sm={12} md={10} lg={10} xl={10}>
             <Box
-              width={"100%"}
+              // border={"1px solid red"}
+              margin={"1% auto"}
+              width={"98%"}
               display={"flex"}
               gap={3}
               flexDirection={"column"}
@@ -226,38 +235,6 @@ export default function MainWindow() {
                   setModalOpenFromPepCoin_Screen_Icon={setOpen}
                 />
               </Box>
-
-              <Box
-                display={"flex"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                flexWrap={"wrap"}
-              >
-                <PepCoin_Screen_Icon
-                  setRenderFromPepCoin_Screen_Icon={setCurrentFileRendering}
-                  setModalOpenFromPepCoin_Screen_Icon={setOpen}
-                />
-                <PepCoin_Screen_Icon
-                  setRenderFromPepCoin_Screen_Icon={setCurrentFileRendering}
-                  setModalOpenFromPepCoin_Screen_Icon={setOpen}
-                />
-                <PepCoin_Screen_Icon
-                  setRenderFromPepCoin_Screen_Icon={setCurrentFileRendering}
-                  setModalOpenFromPepCoin_Screen_Icon={setOpen}
-                />
-                <PepCoin_Screen_Icon
-                  setRenderFromPepCoin_Screen_Icon={setCurrentFileRendering}
-                  setModalOpenFromPepCoin_Screen_Icon={setOpen}
-                />
-                <PepCoin_Screen_Icon
-                  setRenderFromPepCoin_Screen_Icon={setCurrentFileRendering}
-                  setModalOpenFromPepCoin_Screen_Icon={setOpen}
-                />
-                <PepCoin_Screen_Icon
-                  setRenderFromPepCoin_Screen_Icon={setCurrentFileRendering}
-                  setModalOpenFromPepCoin_Screen_Icon={setOpen}
-                />
-              </Box>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={1} lg={1} xl={1}>
@@ -267,7 +244,9 @@ export default function MainWindow() {
             />
           </Grid>
         </Grid>
-        <Divider
+
+        {/* as Client Demands This Section is removing because it is for V 1.0.1 and we are currently in V1.0.0 */}
+        {/* <Divider
           sx={{
             bgcolor: "#FFFFFF26",
             height: "1px",
@@ -557,7 +536,7 @@ export default function MainWindow() {
               File
             </Box>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
       {/* modal code is here */}
       <div>

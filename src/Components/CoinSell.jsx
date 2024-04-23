@@ -14,24 +14,55 @@ export const CoinSell = () => {
 
   return (
     <Box
-      minHeight={"400px"}
+      padding={"1rem 0px"}
       border={"1px solid black"}
       display={"flex"}
       justifyContent={"center"}
+      sx={{
+        maxHeight: {
+          xl: "400px",
+          lg: "400px",
+          md: "400px",
+          sm: "450px",
+          xs: "530px",
+        },
+      }}
     >
       <Box
         display={"flex"}
         flexDirection={"column"}
         gap={"1rem"}
         justifyContent={"center"}
-        maxWidth={"500px"}
         m={"auto"}
+        sx={{
+          maxWidth: {
+            xl: "500px",
+            lg: "500px",
+            md: "500px",
+            sm: "400px",
+            xs: "230px",
+          },
+        }}
       >
         <Box display={"flex"} gap={"5px"} alignItems={"center"}>
           <Typography
             fontFamily={"Perfect_DOSVGA"}
-            fontSize={"16px"}
-            fontWeight={500}
+            sx={{
+              fontSize: {
+                xl: "16px",
+                lg: "16px",
+                md: "16px",
+                sm: "14px",
+                xs: "12px",
+              },
+              fontWeight: {
+                xl: 500,
+                lg: 400,
+                md: 400,
+                sm: 400,
+                xs: 400,
+              },
+            }}
           >
             C :
           </Typography>
@@ -40,8 +71,22 @@ export const CoinSell = () => {
           </IconButton>
           <Typography
             fontFamily={"Perfect_DOSVGA"}
-            fontSize={"16px"}
-            fontWeight={500}
+            sx={{
+              fontSize: {
+                xl: "16px",
+                lg: "16px",
+                md: "16px",
+                sm: "14px",
+                xs: "12px",
+              },
+              fontWeight: {
+                xl: 500,
+                lg: 400,
+                md: 400,
+                sm: 400,
+                xs: 400,
+              },
+            }}
           >
             Blast.bat
           </Typography>
@@ -50,13 +95,39 @@ export const CoinSell = () => {
           </IconButton>
           <Typography
             fontFamily={"Perfect_DOSVGA"}
-            fontSize={"16px"}
-            fontWeight={500}
+            sx={{
+              fontSize: {
+                xl: "16px",
+                lg: "16px",
+                md: "16px",
+                sm: "14px",
+                xs: "12px",
+              },
+              fontWeight: {
+                xl: 500,
+                lg: 400,
+                md: 400,
+                sm: 400,
+                xs: 400,
+              },
+            }}
           >
             pepecoin.Sell
           </Typography>
         </Box>
-        <Box display={"flex"} gap={"5px"}>
+        <Box
+          display={"flex"}
+          gap={"5px"}
+          sx={{
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              sm: "column",
+              xs: "column",
+            },
+          }}
+        >
           <Box
             bgcolor={"#EEEEEE"}
             borderRadius={"5px"}
@@ -68,8 +139,22 @@ export const CoinSell = () => {
           >
             <Typography
               fontFamily={"Perfect_DOSVGA"}
-              fontSize={"16px"}
-              fontWeight={400}
+              sx={{
+                fontSize: {
+                  xl: "16px",
+                  lg: "16px",
+                  md: "16px",
+                  sm: "14px",
+                  xs: "14px",
+                },
+                fontWeight: {
+                  xl: 500,
+                  lg: 400,
+                  md: 400,
+                  sm: 400,
+                  xs: 400,
+                },
+              }}
             >
               switch to pepecoin.day
             </Typography>
@@ -91,8 +176,22 @@ export const CoinSell = () => {
           >
             <Typography
               fontFamily={"Perfect_DOSVGA"}
-              fontSize={"16px"}
-              fontWeight={400}
+              sx={{
+                fontSize: {
+                  xl: "16px",
+                  lg: "16px",
+                  md: "16px",
+                  sm: "14px",
+                  xs: "14px",
+                },
+                fontWeight: {
+                  xl: 500,
+                  lg: 400,
+                  md: 400,
+                  sm: 400,
+                  xs: 400,
+                },
+              }}
             >
               set max slippage
             </Typography>
@@ -198,6 +297,16 @@ export const CoinSell = () => {
             justifyContent={"center"}
             alignItems={"center"}
             gap={"10px"}
+            sx={{
+              flexDirection: {
+                xl: "row",
+                lg: "row",
+                md: "row",
+                sm: "column",
+                xs: "column",
+              },
+              mt: { xl: "0px", lg: "0px", md: "0px", sm: "10px", xs: "10px" },
+            }}
           >
             <Button
               onClick={() => setConnectWalletClicked(true)}
@@ -254,33 +363,33 @@ export const CoinSell = () => {
             </Button>
           </Box>
         )}
-
+        {/* 
         <Box
           width={"100%"}
           height={"42px"}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-        >
-          {connectWalletClicked && (
-            <Button
-              sx={{
-                border: "1px solid black",
-                bgcolor: "#EEEEEE",
-                color: "black",
-                borderRadius: "12px",
-                width: "100%",
-                textTransform: "lowercase",
-                height: "50px",
-                fontFamily: "Perfect_DOSVGA",
-                fontSize: "16px",
-                fontWeight: 400,
-              }}
-            >
-              Place trade
-            </Button>
-          )}
-        </Box>
+        > */}
+        {connectWalletClicked && (
+          <Button
+            sx={{
+              border: "1px solid black",
+              bgcolor: "#EEEEEE",
+              color: "black",
+              borderRadius: "12px",
+              width: "100%",
+              textTransform: "lowercase",
+              height: "50px",
+              fontFamily: "Perfect_DOSVGA",
+              fontSize: "16px",
+              fontWeight: 400,
+            }}
+          >
+            Place trade
+          </Button>
+        )}
+        {/* </Box> */}
       </Box>
     </Box>
   );

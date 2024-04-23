@@ -72,6 +72,7 @@ function Header() {
                 xl: "space-between",
               },
             }}
+            gap={1}
             // justifyContent={"space-between"}
           >
             <Box
@@ -99,7 +100,7 @@ function Header() {
                 opacity: "50%",
               }}
             >
-              V1.0.1
+              {" V1.0.0"}
             </Box>
           </Grid>
           <Grid

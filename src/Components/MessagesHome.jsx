@@ -13,6 +13,7 @@ export const MessagesHome = () => {
       display={"flex"}
       flexDirection={"column"}
       gap={"10px"}
+      // sx={{ width: "100%", overflowX: "hidden" }}
     >
       <Box
         display={"flex"}
@@ -26,9 +27,33 @@ export const MessagesHome = () => {
             src={homeImage}
             width={"24px"}
             height={"18px"}
+            sx={{
+              width: {
+                xs: "13px",
+                sm: "14px",
+                md: "18px",
+                lg: "24px",
+                xl: "24px",
+              },
+              height: {
+                xs: "13px",
+                sm: "14px",
+                md: "18px",
+                lg: "24px",
+                xl: "24px",
+              },
+            }}
           />
           <Typography
-            fontSize={"24px"}
+            sx={{
+              fontSize: {
+                xs: "13px",
+                sm: "14px",
+                md: "18px",
+                lg: "24px",
+                xl: "24px",
+              },
+            }}
             lineHeight={"24px"}
             fontWeight={"400"}
             fontFamily={"Perfect_DOSVGA"}
@@ -39,7 +64,15 @@ export const MessagesHome = () => {
         </Box>
         <Box>
           <Typography
-            fontSize={"14px"}
+            sx={{
+              fontSize: {
+                xs: "13px",
+                sm: "14px",
+                md: "18px",
+                lg: "24px",
+                xl: "24px",
+              },
+            }}
             lineHeight={"14px"}
             fontWeight={"400"}
             fontFamily={"Perfect_DOSVGA"}
@@ -56,18 +89,49 @@ export const MessagesHome = () => {
           gap={"15px"}
           padding={"5px 10px"}
           bgcolor={"#EEEEEE"}
+          sx={{
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              xs: "column",
+              sm: "column",
+            },
+          }}
         >
           <Box>
             <Box display={"flex"} gap={"15px"}>
               <Box
                 component={"img"}
                 src={messageProfile}
-                width={"66px"}
-                height={"66px"}
+                sx={{
+                  width: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                  height: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                }}
               />
               <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -75,7 +139,15 @@ export const MessagesHome = () => {
                   Title
                 </Typography>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -83,56 +155,126 @@ export const MessagesHome = () => {
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </Typography>
-                <Box display={"flex"} gap={"10px"} alignItems={"center"}>
-                  <Box
-                    component={"img"}
-                    src={pepeCoinLogo}
-                    width={"18px"}
-                    height={"18px"}
-                  />
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    0x0000
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    Today, at 02:02
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Box>
-                    <CustonBadge badgeContent={2}>
-                      <FavoriteIcon />
-                    </CustonBadge>
+                <Box
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  sx={{
+                    flexDirection: {
+                      xs: "column",
+                      sm: "row",
+                      md: "row",
+                      lg: "row",
+                      xl: "row",
+                    },
+                  }}
+                >
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box
+                      component={"img"}
+                      src={pepeCoinLogo}
+                      width={"18px"}
+                      height={"18px"}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      0x0000
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
                   </Box>
-                  <Box ml={"8px"}>
-                    <CustonBadge badgeContent={2}>
-                      <ChatBubbleIcon />
-                    </CustonBadge>
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      Today, at 02:02
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
+                  </Box>
+
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box>
+                      <CustonBadge badgeContent={2}>
+                        <FavoriteIcon />
+                      </CustonBadge>
+                    </Box>
+                    <Box ml={"8px"}>
+                      <CustonBadge badgeContent={2}>
+                        <ChatBubbleIcon />
+                      </CustonBadge>
+                    </Box>
                   </Box>
                 </Box>
               </Box>
             </Box>
           </Box>
-          <Divider orientation="vertical" flexItem />
+          <Divider
+            orientation="vertical"
+            flexItem
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "block",
+                lg: "block",
+                xl: "block",
+              },
+            }}
+          />
           <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
             <Box
               component={"img"}
               src={pepeCoinIcon}
-              width={"66px"}
-              height={"66px"}
+              sx={{
+                width: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+                height: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+              }}
             />
             <Box display={"flex"} gap={"5px"} flexDirection={"column"}>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "16px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -140,7 +282,15 @@ export const MessagesHome = () => {
                 0x0000
               </Typography>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                    xl: "14px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -157,18 +307,49 @@ export const MessagesHome = () => {
           gap={"15px"}
           padding={"5px 10px"}
           bgcolor={"#EEEEEE"}
+          sx={{
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              xs: "column",
+              sm: "column",
+            },
+          }}
         >
           <Box>
             <Box display={"flex"} gap={"15px"}>
               <Box
                 component={"img"}
                 src={messageProfile}
-                width={"66px"}
-                height={"66px"}
+                sx={{
+                  width: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                  height: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                }}
               />
               <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -176,7 +357,15 @@ export const MessagesHome = () => {
                   Title
                 </Typography>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -184,56 +373,126 @@ export const MessagesHome = () => {
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </Typography>
-                <Box display={"flex"} gap={"10px"} alignItems={"center"}>
-                  <Box
-                    component={"img"}
-                    src={pepeCoinLogo}
-                    width={"18px"}
-                    height={"18px"}
-                  />
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    0x0000
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    Today, at 02:02
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Box>
-                    <CustonBadge badgeContent={2}>
-                      <FavoriteIcon />
-                    </CustonBadge>
+                <Box
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  sx={{
+                    flexDirection: {
+                      xs: "column",
+                      sm: "row",
+                      md: "row",
+                      lg: "row",
+                      xl: "row",
+                    },
+                  }}
+                >
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box
+                      component={"img"}
+                      src={pepeCoinLogo}
+                      width={"18px"}
+                      height={"18px"}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      0x0000
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
                   </Box>
-                  <Box ml={"8px"}>
-                    <CustonBadge badgeContent={2}>
-                      <ChatBubbleIcon />
-                    </CustonBadge>
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      Today, at 02:02
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
+                  </Box>
+
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box>
+                      <CustonBadge badgeContent={2}>
+                        <FavoriteIcon />
+                      </CustonBadge>
+                    </Box>
+                    <Box ml={"8px"}>
+                      <CustonBadge badgeContent={2}>
+                        <ChatBubbleIcon />
+                      </CustonBadge>
+                    </Box>
                   </Box>
                 </Box>
               </Box>
             </Box>
           </Box>
-          <Divider orientation="vertical" flexItem />
+          <Divider
+            orientation="vertical"
+            flexItem
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "block",
+                lg: "block",
+                xl: "block",
+              },
+            }}
+          />
           <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
             <Box
               component={"img"}
               src={pepeCoinIcon}
-              width={"66px"}
-              height={"66px"}
+              sx={{
+                width: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+                height: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+              }}
             />
             <Box display={"flex"} gap={"5px"} flexDirection={"column"}>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "16px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -241,7 +500,15 @@ export const MessagesHome = () => {
                 0x0000
               </Typography>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                    xl: "14px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -258,18 +525,49 @@ export const MessagesHome = () => {
           gap={"15px"}
           padding={"5px 10px"}
           bgcolor={"#EEEEEE"}
+          sx={{
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              xs: "column",
+              sm: "column",
+            },
+          }}
         >
           <Box>
             <Box display={"flex"} gap={"15px"}>
               <Box
                 component={"img"}
                 src={messageProfile}
-                width={"66px"}
-                height={"66px"}
+                sx={{
+                  width: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                  height: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                }}
               />
               <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -277,7 +575,15 @@ export const MessagesHome = () => {
                   Title
                 </Typography>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -285,56 +591,126 @@ export const MessagesHome = () => {
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </Typography>
-                <Box display={"flex"} gap={"10px"} alignItems={"center"}>
-                  <Box
-                    component={"img"}
-                    src={pepeCoinLogo}
-                    width={"18px"}
-                    height={"18px"}
-                  />
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    0x0000
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    Today, at 02:02
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Box>
-                    <CustonBadge badgeContent={2}>
-                      <FavoriteIcon />
-                    </CustonBadge>
+                <Box
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  sx={{
+                    flexDirection: {
+                      xs: "column",
+                      sm: "row",
+                      md: "row",
+                      lg: "row",
+                      xl: "row",
+                    },
+                  }}
+                >
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box
+                      component={"img"}
+                      src={pepeCoinLogo}
+                      width={"18px"}
+                      height={"18px"}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      0x0000
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
                   </Box>
-                  <Box ml={"8px"}>
-                    <CustonBadge badgeContent={2}>
-                      <ChatBubbleIcon />
-                    </CustonBadge>
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      Today, at 02:02
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
+                  </Box>
+
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box>
+                      <CustonBadge badgeContent={2}>
+                        <FavoriteIcon />
+                      </CustonBadge>
+                    </Box>
+                    <Box ml={"8px"}>
+                      <CustonBadge badgeContent={2}>
+                        <ChatBubbleIcon />
+                      </CustonBadge>
+                    </Box>
                   </Box>
                 </Box>
               </Box>
             </Box>
           </Box>
-          <Divider orientation="vertical" flexItem />
+          <Divider
+            orientation="vertical"
+            flexItem
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "block",
+                lg: "block",
+                xl: "block",
+              },
+            }}
+          />
           <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
             <Box
               component={"img"}
               src={pepeCoinIcon}
-              width={"66px"}
-              height={"66px"}
+              sx={{
+                width: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+                height: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+              }}
             />
             <Box display={"flex"} gap={"5px"} flexDirection={"column"}>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "16px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -342,7 +718,15 @@ export const MessagesHome = () => {
                 0x0000
               </Typography>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                    xl: "14px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -359,18 +743,49 @@ export const MessagesHome = () => {
           gap={"15px"}
           padding={"5px 10px"}
           bgcolor={"#EEEEEE"}
+          sx={{
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              xs: "column",
+              sm: "column",
+            },
+          }}
         >
           <Box>
             <Box display={"flex"} gap={"15px"}>
               <Box
                 component={"img"}
                 src={messageProfile}
-                width={"66px"}
-                height={"66px"}
+                sx={{
+                  width: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                  height: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                }}
               />
               <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -378,7 +793,15 @@ export const MessagesHome = () => {
                   Title
                 </Typography>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -386,56 +809,126 @@ export const MessagesHome = () => {
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </Typography>
-                <Box display={"flex"} gap={"10px"} alignItems={"center"}>
-                  <Box
-                    component={"img"}
-                    src={pepeCoinLogo}
-                    width={"18px"}
-                    height={"18px"}
-                  />
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    0x0000
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    Today, at 02:02
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Box>
-                    <CustonBadge badgeContent={2}>
-                      <FavoriteIcon />
-                    </CustonBadge>
+                <Box
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  sx={{
+                    flexDirection: {
+                      xs: "column",
+                      sm: "row",
+                      md: "row",
+                      lg: "row",
+                      xl: "row",
+                    },
+                  }}
+                >
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box
+                      component={"img"}
+                      src={pepeCoinLogo}
+                      width={"18px"}
+                      height={"18px"}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      0x0000
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
                   </Box>
-                  <Box ml={"8px"}>
-                    <CustonBadge badgeContent={2}>
-                      <ChatBubbleIcon />
-                    </CustonBadge>
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      Today, at 02:02
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
+                  </Box>
+
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box>
+                      <CustonBadge badgeContent={2}>
+                        <FavoriteIcon />
+                      </CustonBadge>
+                    </Box>
+                    <Box ml={"8px"}>
+                      <CustonBadge badgeContent={2}>
+                        <ChatBubbleIcon />
+                      </CustonBadge>
+                    </Box>
                   </Box>
                 </Box>
               </Box>
             </Box>
           </Box>
-          <Divider orientation="vertical" flexItem />
+          <Divider
+            orientation="vertical"
+            flexItem
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "block",
+                lg: "block",
+                xl: "block",
+              },
+            }}
+          />
           <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
             <Box
               component={"img"}
               src={pepeCoinIcon}
-              width={"66px"}
-              height={"66px"}
+              sx={{
+                width: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+                height: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+              }}
             />
             <Box display={"flex"} gap={"5px"} flexDirection={"column"}>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "16px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -443,7 +936,15 @@ export const MessagesHome = () => {
                 0x0000
               </Typography>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                    xl: "14px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -460,18 +961,49 @@ export const MessagesHome = () => {
           gap={"15px"}
           padding={"5px 10px"}
           bgcolor={"#EEEEEE"}
+          sx={{
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              xs: "column",
+              sm: "column",
+            },
+          }}
         >
           <Box>
             <Box display={"flex"} gap={"15px"}>
               <Box
                 component={"img"}
                 src={messageProfile}
-                width={"66px"}
-                height={"66px"}
+                sx={{
+                  width: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                  height: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                }}
               />
               <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -479,7 +1011,15 @@ export const MessagesHome = () => {
                   Title
                 </Typography>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -487,56 +1027,126 @@ export const MessagesHome = () => {
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </Typography>
-                <Box display={"flex"} gap={"10px"} alignItems={"center"}>
-                  <Box
-                    component={"img"}
-                    src={pepeCoinLogo}
-                    width={"18px"}
-                    height={"18px"}
-                  />
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    0x0000
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    Today, at 02:02
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Box>
-                    <CustonBadge badgeContent={2}>
-                      <FavoriteIcon />
-                    </CustonBadge>
+                <Box
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  sx={{
+                    flexDirection: {
+                      xs: "column",
+                      sm: "row",
+                      md: "row",
+                      lg: "row",
+                      xl: "row",
+                    },
+                  }}
+                >
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box
+                      component={"img"}
+                      src={pepeCoinLogo}
+                      width={"18px"}
+                      height={"18px"}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      0x0000
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
                   </Box>
-                  <Box ml={"8px"}>
-                    <CustonBadge badgeContent={2}>
-                      <ChatBubbleIcon />
-                    </CustonBadge>
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      Today, at 02:02
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
+                  </Box>
+
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box>
+                      <CustonBadge badgeContent={2}>
+                        <FavoriteIcon />
+                      </CustonBadge>
+                    </Box>
+                    <Box ml={"8px"}>
+                      <CustonBadge badgeContent={2}>
+                        <ChatBubbleIcon />
+                      </CustonBadge>
+                    </Box>
                   </Box>
                 </Box>
               </Box>
             </Box>
           </Box>
-          <Divider orientation="vertical" flexItem />
+          <Divider
+            orientation="vertical"
+            flexItem
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "block",
+                lg: "block",
+                xl: "block",
+              },
+            }}
+          />
           <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
             <Box
               component={"img"}
               src={pepeCoinIcon}
-              width={"66px"}
-              height={"66px"}
+              sx={{
+                width: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+                height: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+              }}
             />
             <Box display={"flex"} gap={"5px"} flexDirection={"column"}>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "16px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -544,7 +1154,15 @@ export const MessagesHome = () => {
                 0x0000
               </Typography>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                    xl: "14px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -561,18 +1179,49 @@ export const MessagesHome = () => {
           gap={"15px"}
           padding={"5px 10px"}
           bgcolor={"#EEEEEE"}
+          sx={{
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              xs: "column",
+              sm: "column",
+            },
+          }}
         >
           <Box>
             <Box display={"flex"} gap={"15px"}>
               <Box
                 component={"img"}
                 src={messageProfile}
-                width={"66px"}
-                height={"66px"}
+                sx={{
+                  width: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                  height: {
+                    xs: "50px",
+                    sm: "50px",
+                    md: "66px",
+                    lg: "66px",
+                    xl: "66px",
+                  },
+                }}
               />
               <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -580,7 +1229,15 @@ export const MessagesHome = () => {
                   Title
                 </Typography>
                 <Typography
-                  fontSize={"16px"}
+                  sx={{
+                    fontSize: {
+                      xs: "12px",
+                      sm: "13px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "16px",
+                    },
+                  }}
                   lineHeight={"16px"}
                   fontWeight={"400"}
                   fontFamily={"Perfect_DOSVGA"}
@@ -588,56 +1245,126 @@ export const MessagesHome = () => {
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </Typography>
-                <Box display={"flex"} gap={"10px"} alignItems={"center"}>
-                  <Box
-                    component={"img"}
-                    src={pepeCoinLogo}
-                    width={"18px"}
-                    height={"18px"}
-                  />
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    0x0000
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Typography
-                    fontSize={"16px"}
-                    lineHeight={"16px"}
-                    fontWeight={"400"}
-                    fontFamily={"Perfect_DOSVGA"}
-                  >
-                    Today, at 02:02
-                  </Typography>
-                  <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
-                  <Box>
-                    <CustonBadge badgeContent={2}>
-                      <FavoriteIcon />
-                    </CustonBadge>
+                <Box
+                  display={"flex"}
+                  gap={"10px"}
+                  alignItems={"center"}
+                  sx={{
+                    flexDirection: {
+                      xs: "column",
+                      sm: "row",
+                      md: "row",
+                      lg: "row",
+                      xl: "row",
+                    },
+                  }}
+                >
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box
+                      component={"img"}
+                      src={pepeCoinLogo}
+                      width={"18px"}
+                      height={"18px"}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      0x0000
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
                   </Box>
-                  <Box ml={"8px"}>
-                    <CustonBadge badgeContent={2}>
-                      <ChatBubbleIcon />
-                    </CustonBadge>
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Typography
+                      sx={{
+                        fontSize: {
+                          xs: "12px",
+                          sm: "13px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "16px",
+                        },
+                      }}
+                      lineHeight={"16px"}
+                      fontWeight={"400"}
+                      fontFamily={"Perfect_DOSVGA"}
+                    >
+                      Today, at 02:02
+                    </Typography>
+                    <Box width={"4px"} height={"4px"} bgcolor={"#c5c5c5"}></Box>
+                  </Box>
+
+                  <Box display={"flex"} gap={"5px"} alignItems={"center"}>
+                    <Box>
+                      <CustonBadge badgeContent={2}>
+                        <FavoriteIcon />
+                      </CustonBadge>
+                    </Box>
+                    <Box ml={"8px"}>
+                      <CustonBadge badgeContent={2}>
+                        <ChatBubbleIcon />
+                      </CustonBadge>
+                    </Box>
                   </Box>
                 </Box>
               </Box>
             </Box>
           </Box>
-          <Divider orientation="vertical" flexItem />
+          <Divider
+            orientation="vertical"
+            flexItem
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "block",
+                lg: "block",
+                xl: "block",
+              },
+            }}
+          />
           <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
             <Box
               component={"img"}
               src={pepeCoinIcon}
-              width={"66px"}
-              height={"66px"}
+              sx={{
+                width: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+                height: {
+                  xs: "50px",
+                  sm: "50px",
+                  md: "66px",
+                  lg: "66px",
+                  xl: "66px",
+                },
+              }}
             />
             <Box display={"flex"} gap={"5px"} flexDirection={"column"}>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "16px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
@@ -645,7 +1372,15 @@ export const MessagesHome = () => {
                 0x0000
               </Typography>
               <Typography
-                fontSize={"16px"}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                    xl: "14px",
+                  },
+                }}
                 lineHeight={"16px"}
                 fontWeight={"400"}
                 fontFamily={"Perfect_DOSVGA"}
